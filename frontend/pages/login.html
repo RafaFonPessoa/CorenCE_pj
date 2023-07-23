@@ -16,7 +16,8 @@
         </div>
         <div class="back-box">
             <div class="form-position">
-                <form class="input-group" onsubmit="logvalidate()" method="post" action=".../backend/php">
+                <form class="input-group" onsubmit="return logvalidation()" 
+                method="post" action=".../backend/php/login.php">
                     <label class="label">Usuário</label>
                     <input autocomplete="off" name="user" class="input" type="text">
                     <label class="label">Senha</label>
