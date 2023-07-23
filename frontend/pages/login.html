@@ -16,12 +16,14 @@
         </div>
         <div class="back-box">
             <div class="form-position">
-                <form class="form-group">
-                    <span>Nome:</span>
-                    <input type="text">
-                    <span>Senha:</span>
-                    <input type="text">
-                    <button id="btn-login" type="submit">Entrar</button>
+                <form class="input-group" onsubmit="logvalidate()" method="post" action=".../backend/php">
+                    <label class="label">Usuário</label>
+                    <input autocomplete="off" name="user" class="input" type="text">
+                    <label class="label">Senha</label>
+                    <input autocomplete="off" name="password" class="input" type="password">
+                    <button id="btn-submit" type="submit">
+                        <span id="btn-text">Entrar</span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -29,5 +31,8 @@
             <p>© 2023 Coren-ce</p>
         </footer>
     </div>
+
+    <script src="../javascript/logvalidation.js"></script>
+    
 </body>
 </html>
