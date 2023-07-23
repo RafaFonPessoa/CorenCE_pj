@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url("images/wave.svg");
+}
+.main-block {
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    display: flex; /* Adicionando o display flex para alinhar os itens verticalmente */
+    flex-direction: column; /* Alinhando os itens verticalmente (um abaixo do outro) */
+    align-items: center; /* Alinhando os itens horizontalmente ao centro */
+}
+
+.page-top {
+    margin-bottom: 20px; /* Adicionando uma margem na parte inferior do .page-top */
+}
+
+
+#logo-coren {
+    width: 50%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0; /* Adicione uma cor de fundo ao footer */
+}
