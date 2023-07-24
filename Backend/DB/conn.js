@@ -1,12 +1,17 @@
-//Conexão com o banco de dados SQL
+const mongoose = require('mongoose');
 
-const mysql = requier('mysql') 
+const dbUrl = 'mongodb+srv://cpdcorence:cpdCE2023@cluster0.so1rcjf.mongodb.net/?retryWrites=true&w=majority';
 
-const connection = mysql.createConnection({
-    host: "127.0.0.1",
-    user: "root",
-    password: "root",
-    database: "coren"
-})
+// Conexão com o banco de dados MongoDB
+mongoose
+  .connect(dbUrl)
+  .then(() => {
+    console.log('Conexão estabelecida com o MongoDB');
+  })
+  .catch((err) => {
+    console.error('Erro ao tentar se conectar com o MongoDB', err);
+});
 
-module.exports = connection
+const db = mongoose.connection;
+
+module.exports = db;

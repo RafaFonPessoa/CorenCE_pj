@@ -10,8 +10,12 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 , h4 , p{
+h1 , h4 {
     color: #05060f99;
+}
+
+p{
+    color: #f0f0f0
 }
 
 .main-block {
@@ -21,6 +25,9 @@ h1 , h4 , p{
     align-items: center; 
 }
 
+.form-position{
+    width: 50%;
+}
 
 #logo-coren {
     width: 50%;
@@ -37,7 +44,7 @@ h1 , h4 , p{
 }
 
 .input {
-    max-width: 190px;
+    width: 40%;
     height: 44px;
     background-color: #2f2f313f;
     border-radius: .5rem;
@@ -70,10 +77,11 @@ h1 , h4 , p{
 
 #btn-submit {
     background-color: #4FACF7;
-    width: 100%;
+    width: 45%;
     height: 40px;
     border-radius: .4rem;
     border: none;
+    margin-top: 1rem;
 }
 
 #btn-text{
@@ -92,5 +100,4 @@ footer {
     bottom: 20px;
     left: 0;
     right: 0;
-    background-color: #f0f0f0; 
 }
