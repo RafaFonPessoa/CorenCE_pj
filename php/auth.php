@@ -16,7 +16,7 @@
             $row = $result->fetch_assoc();
             if ($row["password"] === $password) {
                 // Senha correta, redirecionar para a página principal
-                echo "<script>window.location.href = '../pages/almox.html'</script>";
+                echo "<script>window.location.href = '../pages/almox.php'</script>";
             } else {
                 // Senha incorreta, exibir mensagem de erro
                 echo "<script>alert('Usuário ou senha incorretos. Tente novamente.');</script>";
