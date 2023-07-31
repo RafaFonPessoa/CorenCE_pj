@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('./images/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #2f2f313f;
+    color: #05060f99;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#logo-coren {
+    width: 50%;
+    max-width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.navbar-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btn-sair {
+    background-color: #F60000;
+}
+
+#btn-cadastrar{
+    background-color: #4FACF7;
+}
+
+.btn-text{
+    color:  #f0f0f0;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-buttons input[type="text"] {
+    padding: 5px;
+}
+
+.item-list {
+    padding: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#btn-adicionar-item {
+    background-color: #4FACF7;
+    color: #fff;
+}
+
+#btn-adicionar {
+    background-color: #4FACF7;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-remove {
+    background-color: #F60000;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-remove:hover {
+    background-color: #D40000;
+}
+
+/* Estilo para a lista de itens */
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.item h3 {
+    margin-top: 0;
+}
+
+/* Estilo para os botões de incremento */
+.btn-increment {
+    padding: 4px 8px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}

@@ -47,6 +47,11 @@
                     echo "<div class='item'>";
                     echo "<h3>{$row['nome']}</h3>";
                     echo "<p>Quantidade: {$row['quantidade']}</p>";
+                    // Botões "+" e "-"
+                    echo "<button class='btn-increment' data-item-id='{$row['id']}' data-increment='1'>+</button>";
+                    echo "<button class='btn-increment' data-item-id='{$row['id']}' data-increment='-1'>-</button>";
+                    // Botão Remover
+                    echo "<button class='btn-remove' data-item-id='{$row['id']}'>Remover</button>";
                     echo "</div>";
                 }
             } else {
@@ -71,7 +76,8 @@
         </div>
     </div>
 
-    <!-- Script para controle do modal -->
+    <!-- Script para controle do modal e itens da lista-->
     <script src="../javascript/modal.js"></script>
+    <script src="../javascript/item_controll.js"></script>
 </body>
 </html>
